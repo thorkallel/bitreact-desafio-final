@@ -1,18 +1,17 @@
 import React from "react";
+import { Hero } from "../components/Hero";
+import Grid from "../components/Grid";
 
 export const Inventory = () => {
   return (
-    <section className="w-full bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold text-white mb-8 text-center">
-          Inventory
-        </h1>
-        <p className="text-lg text-white/90 leading-relaxed max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos.
-        </p>
-      </div>
-    </section>
+    <>
+      <Hero title="Inventory" image="/src/assets/img/hero/hero-3/banner.png" />
+      <section className="w-full bg-gradient-to-b from-gray-900 to-gray-600 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <Grid />
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import { Carousel } from "../components/Carousel";
 import { Brands } from "../components/Brands";
 import { Video } from "../components/Video";
 import { Forms } from "../components/Forms";
+import { Grid } from "../components/Grid";
 
 export const Home = () => {
   return (
@@ -10,7 +11,7 @@ export const Home = () => {
       <Carousel />
       <Brands />
       <Video />
-      <Forms />
+      <Grid />
     </>
   );
 };

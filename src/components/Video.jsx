@@ -15,8 +15,6 @@ export const Video = () => {
             className="w-full h-full object-cover"
             src="/src/assets/video/carento.mp4"
             autoPlay
-            muted
-            loop
             playsInline
             controls
           />
@@ -39,11 +37,11 @@ export const Video = () => {
           {!isPlaying && (
             <>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 ml-0 text-center">
-                Descubre Nuestra Experiencia
+                Discover Our Experience
               </h2>
               <p className="text-lg md:text-xl mb-8 text-white/90 text-center">
-                Explora nuestra colección de vehículos de lujo y encuentra el
-                perfecto para ti
+                Explore our collection of luxury vehicles and find the perfect
+                one for you
               </p>
               <button
                 onClick={togglePlay}
@@ -69,7 +67,7 @@ export const Video = () => {
                     d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span>Reproducir video</span>
+                <span>Play</span>
               </button>
             </>
           )}

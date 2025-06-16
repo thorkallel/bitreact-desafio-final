@@ -11,8 +11,27 @@ export default {
       },
       fontFamily: {
         sans: ["Urbanist", "sans-serif"],
+        libre: ["Libre Bodoni", "serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const newUtilities = {
+        ".text-shadow-sm": {
+          textShadow: theme("textShadow.sm"),
+        },
+        ".text-shadow-md": {
+          textShadow: theme("textShadow.md"),
+        },
+        ".text-shadow-lg": {
+          textShadow: theme("textShadow.lg"),
+        },
+        ".text-shadow-custom": {
+          textShadow: theme("textShadow.custom"),
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
